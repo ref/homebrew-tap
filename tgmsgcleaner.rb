@@ -10,7 +10,7 @@ class Tgmsgcleaner < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/anik1ng/tgmsgcleaner/releases/download/v0.1.0/tgmsgcleaner_0.1.0_darwin_amd64.tar.gz"
-      sha256 "f5b2fd316136d319ddb1baa32c6cc15e19703ba2b4cb7e0654211d42e84de1ef"
+      sha256 "89773c53bd106681343ab15a0df8455b3cfd2c6785532c985bad925e3b0bd1b3"
 
       define_method(:install) do
         bin.install "tgmsgcleaner"
@@ -18,7 +18,7 @@ class Tgmsgcleaner < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/anik1ng/tgmsgcleaner/releases/download/v0.1.0/tgmsgcleaner_0.1.0_darwin_arm64.tar.gz"
-      sha256 "56e6173dc777b671902ef94f7bf6d96a4946212511800a3af9c5a494c94fab87"
+      sha256 "3b0736b9f2b1eb190d229898ffab3c379b72c4e294eb0a865d26322bfeba90f3"
 
       define_method(:install) do
         bin.install "tgmsgcleaner"
@@ -29,14 +29,14 @@ class Tgmsgcleaner < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/anik1ng/tgmsgcleaner/releases/download/v0.1.0/tgmsgcleaner_0.1.0_linux_amd64.tar.gz"
-      sha256 "755c4abe80d1521db14e150d2938870065a29b21a5607fb5975fb760e0353a97"
+      sha256 "acbc2cb4124b14e0d7ffa4348ba954434ec7d69e6379404b918a9ec12e021b78"
       define_method(:install) do
         bin.install "tgmsgcleaner"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/anik1ng/tgmsgcleaner/releases/download/v0.1.0/tgmsgcleaner_0.1.0_linux_arm64.tar.gz"
-      sha256 "f5b0292beacf1cac40d14848637a7615068f77e63aeb99987ace2c0b64f26a9d"
+      sha256 "f7291e8d95c957e35c2cde355d7facaea2240ab647b632875826c7ed49e365c4"
       define_method(:install) do
         bin.install "tgmsgcleaner"
       end
