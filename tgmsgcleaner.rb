@@ -5,20 +5,20 @@
 class Tgmsgcleaner < Formula
   desc "Clean up your Telegram presence"
   homepage "https://github.com/anik1ng/tgmsgcleaner"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/anik1ng/tgmsgcleaner/releases/download/v0.1.0/tgmsgcleaner_0.1.0_darwin_amd64.tar.gz"
-      sha256 "89773c53bd106681343ab15a0df8455b3cfd2c6785532c985bad925e3b0bd1b3"
+      url "https://github.com/anik1ng/tgmsgcleaner/releases/download/v0.1.1/tgmsgcleaner_0.1.1_darwin_amd64.tar.gz"
+      sha256 "1fb1111d4a49dfddda7e17a7a1fba074391bd84fa6baa9250eeb2eec4c6460b6"
 
       define_method(:install) do
         bin.install "tgmsgcleaner"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/anik1ng/tgmsgcleaner/releases/download/v0.1.0/tgmsgcleaner_0.1.0_darwin_arm64.tar.gz"
-      sha256 "3b0736b9f2b1eb190d229898ffab3c379b72c4e294eb0a865d26322bfeba90f3"
+      url "https://github.com/anik1ng/tgmsgcleaner/releases/download/v0.1.1/tgmsgcleaner_0.1.1_darwin_arm64.tar.gz"
+      sha256 "516b675d0caabe1d7cf8373f7b8b9ef2f28ab7f6627037370e9d97ffa649046e"
 
       define_method(:install) do
         bin.install "tgmsgcleaner"
@@ -28,15 +28,15 @@ class Tgmsgcleaner < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/anik1ng/tgmsgcleaner/releases/download/v0.1.0/tgmsgcleaner_0.1.0_linux_amd64.tar.gz"
-      sha256 "acbc2cb4124b14e0d7ffa4348ba954434ec7d69e6379404b918a9ec12e021b78"
+      url "https://github.com/anik1ng/tgmsgcleaner/releases/download/v0.1.1/tgmsgcleaner_0.1.1_linux_amd64.tar.gz"
+      sha256 "b6262bd9e17c18dac8170a0185bef0ca379fe05e080321b3df0dfbe781cb9f5b"
       define_method(:install) do
         bin.install "tgmsgcleaner"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/anik1ng/tgmsgcleaner/releases/download/v0.1.0/tgmsgcleaner_0.1.0_linux_arm64.tar.gz"
-      sha256 "f7291e8d95c957e35c2cde355d7facaea2240ab647b632875826c7ed49e365c4"
+      url "https://github.com/anik1ng/tgmsgcleaner/releases/download/v0.1.1/tgmsgcleaner_0.1.1_linux_arm64.tar.gz"
+      sha256 "edfca49789c28b9251b91bb4170d8d3c7d8a01ce40c856a7eadbea910dbd5980"
       define_method(:install) do
         bin.install "tgmsgcleaner"
       end
